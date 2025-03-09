@@ -173,11 +173,11 @@ function Services() {
             <div className="image-wrapper" ref={imageWrapperRef}>
               <img
                 className="before"
-                src="/img/banner.png"
+                src="/img/Hemi Before.png"
                 alt="Before Treatment"
               />
               <div className="after" ref={afterImageRef}>
-                <img src="img/OTBanner.jpeg" alt="After Treatment" />
+                <img src="img/Hemi After.png" alt="After Treatment" style={{filter:"grayscale(100%)"}} />
               </div>
               <div className="slider" ref={sliderRef}></div>
             </div>

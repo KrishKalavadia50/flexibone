@@ -1,19 +1,31 @@
-import React from 'react'
+import React, { useEffect } from "react";
+
 
 function Feedbackpopup() {
 
-function openPopup() {
-    document.getElementById("feedbackPopup").classList.add("show");
-}
-function closePopup() {
-    document.getElementById("feedbackPopup").classList.remove("show");
-}
-window.onclick = function(event) {
-    let popup = document.getElementById("feedbackPopup");
-    if (event.target !== popup && !popup.contains(event.target) && event.target !== document.querySelector(".feedback-button")) {
-        closePopup();
-    }
-}
+    function openPopup() {
+        document.getElementById("feedbackPopup").classList.add("show");
+      }
+    
+      function closePopup() {
+        document.getElementById("feedbackPopup").classList.remove("show");
+      }
+    
+      useEffect(() => {
+        function handleClickOutside(event) {
+          let popup = document.getElementById("feedbackPopup");
+          let button = document.querySelector(".feedback-button");
+          
+          if (popup && !popup.contains(event.target) && event.target !== button) {
+            closePopup();
+          }
+        }
+    
+        window.addEventListener("click", handleClickOutside);
+        return () => {
+          window.removeEventListener("click", handleClickOutside);
+        };
+      }, []);
   return (
     <div>
     <div class="feedback-button" onclick="openPopup()">

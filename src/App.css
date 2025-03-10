@@ -1038,7 +1038,7 @@ h1 .highlight {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 40% 60% 60% 40%; /* Creates a cut-out effect */
+  border-radius: 40% 60% 60% 40%; 
   transition: all 0.3s ease-in-out;
 }
 

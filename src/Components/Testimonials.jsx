@@ -30,6 +30,20 @@ function Testimonials() {
       feedback:
         "I tore my ACL playing football, and I thought my career was over. The orthopedic team guided me through surgery and rehab. Now, I'm back on the field stronger than ever!",
     },
+    {
+      img: "/img/banner.png",
+      name: "Name",
+      role: "Sports Injury Recovery",
+      feedback:
+        "I tore my ACL playing football, and I thought my career was over. The orthopedic team guided me through surgery and rehab. Now, I'm back on the field stronger than ever!",
+    },
+    {
+      img: "/img/banner.png",
+      name: "Name",
+      role: "Sports Injury Recovery",
+      feedback:
+        "I tore my ACL playing football, and I thought my career was over. The orthopedic team guided me through surgery and rehab. Now, I'm back on the field stronger than ever!",
+    },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -47,11 +61,11 @@ function Testimonials() {
         <button className="button">All Client Testimonials</button>
       </div>
 
-      <div className="testimonials-wrapper">
+      <div className="testimonials-wrapper" style={{ width: `${testimonialsData.length * 270}px` }}>
         <div
           className="testimonials"
           style={{
-            transform: `translateX(-${currentIndex * 100}%)`,
+            transform: `translateX(-${currentIndex * 1080}px)`,
           }}
         >
           {testimonialsData.map((testimonial, index) => (

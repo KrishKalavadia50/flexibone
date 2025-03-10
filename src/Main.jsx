@@ -6,6 +6,7 @@ import Testimonials from './Components/Testimonials'
 import Articles from './Components/Articles'
 import Contact from './Components/Contact'
 import Feedbackpopup from './Components/Feedbackpopup'
+import Footer from './Components/Footer'
 
 function Main() {
   return (
@@ -17,6 +18,7 @@ function Main() {
       <Articles />
       <Contact />
       <Feedbackpopup />
+      <Footer />
     </div>
   )
 }

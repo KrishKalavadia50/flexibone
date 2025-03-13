@@ -1046,3 +1046,121 @@ h1 .highlight {
   transform: scale(1.1);
 }
 
+/* Flexibone_info */
+
+.Banner {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url("/public/img/OTBanner.jpeg") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  padding: 2rem 10%;
+  overflow: hidden;
+}
+
+.Banner .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(23, 86, 204, 0.7);
+  z-index: 0;
+}
+
+.Flexibone-info-title {
+  font-size: 54px;
+  color: #00af89;
+  font-weight: 500;
+  padding: 0 155px;
+  width: 100vw;
+  text-align: left;
+  top: 5%;
+  position: relative;
+  z-index: 1;
+}
+.Flexibone-info-title span {
+  font-size: 64px;
+  color: #ffffff;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.Flexibone-info-title .highlight {
+  display: block; 
+  color: #ffffff;
+  z-index: 1;
+}
+
+.line {
+  position: absolute;
+  margin-top: .5rem;
+  left: 9.8rem;
+  width: calc(100% - 19.6rem);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  opacity: 0.5;
+}
+
+.Flexibone-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1150px;
+  width: 100%;
+  top: 8%;
+  position: relative;
+  z-index: 2;
+}
+
+.Flexibone-text-section {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: white;
+  text-align: justify;
+  opacity: 0.9;
+}
+
+.Flexibone-image-section {
+  flex: .6;
+  position: relative;
+  top: 7%;
+  text-align: right;
+}
+
+.Flexibone-image-section img {
+  width: 100%;
+  max-width: 400px;
+  height: 30vh;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .Banner {
+    padding: 0 5%;
+    height: auto;
+  }
+
+  .Flexibone-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .Flexibone-text-section {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  .Flexibone-image-section img {
+    max-width: 100%;
+  }
+}
+
+

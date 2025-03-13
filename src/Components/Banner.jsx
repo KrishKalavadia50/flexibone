@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Nav from "./Nav";
 
 function Banner() {
   const [typingDone, setTypingDone] = useState(false);
@@ -12,46 +13,7 @@ function Banner() {
   }, []);
   return (
     <div>
-      <header>
-        <div className="container">
-          <div className="logo" style={{ filter: "invert(1)" }}>
-            <img src="/img/flexi_bone.png" alt="DentiCare Logo" />
-          </div>
-          <nav>
-            <ul>
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">About Us</a>
-              </li>
-              <li>
-                <a href="#">Services</a>
-              </li>
-              <li>
-                <a href="#">Blog / Articles</a>
-              </li>
-              <li>
-                <a href="#">Contact</a>
-              </li>
-            </ul>
-          </nav>
-          <div className="social-icons">
-            <a href="#">
-              <img src="/img/facebook-app-symbol.png" alt="Facebook" />
-            </a>
-            <a href="#">
-              <img src="/img/twitter.png" alt="Twitter" />
-            </a>
-            <a href="#">
-              <img src="/img/linkedin.png" alt="LinkedIn" />
-            </a>
-            <a href="#">
-              <img src="/img/pinterest.png" alt="Pinterest" />
-            </a>
-          </div>
-        </div>
-      </header>
+      <Nav />
 
       <section className="banner">
         <div className="overlay"></div>

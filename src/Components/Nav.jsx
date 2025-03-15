@@ -7,12 +7,12 @@ export default function Nav() {
       <header>
         <div className="container">
           <div className="logo" style={{ filter: "invert(1)" }}>
-            <img src="/img/flexi_bone.png" alt="DentiCare Logo" />
+           <Link to="/" ><img src="/img/flexi_bone.png"/></Link>
           </div>
           <nav>
             <ul>
               <li>
-                <Link to="#">Home</Link>
+                <Link to="/">Home</Link>
               </li>
               <li>
               <Link to="/Flexibone_info">About</Link>

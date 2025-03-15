@@ -1162,5 +1162,171 @@ h1 .highlight {
     max-width: 100%;
   }
 }
+/* Services info */
 
+.services-info-container {
+  position: relative;
+  top: 80px;
+  height: auto;
+}
+.circle-container {
+  position: relative;
+  top: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 50px;
+}
+.circle {
+  position: relative;
+  top: 30px;
+  width: 250px;
+  height: 220px;
+}
+.circle svg {
+  transform: rotate(-90deg);
+}
+.circle text {
+  font-size: 22px;
+  font-weight: bold;
+  fill: #002d72;
+}
+.services-info-icon {
+  color: #104099;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
+.services-info-title {
+  font-size: 54px;
+  color: #104099;
+  font-weight: 500;
+  padding: 0 155px;
+  width: 100vw;
+  text-align: left;
+  top: 5%;
+  position: relative;
+  z-index: 1;
+}
+.services-info-title span {
+  font-size: 64px;
+  color: #104099;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.services-info-title .highlight {
+  display: block; 
+  color: #104099;
+  z-index: 1;
+}
+
+.services-paragraph{
+  position: relative;
+  top: 20px;
+  line-height: 25px;
+  padding: 0 155px;
+  max-width: 900px;
+}
+
+.percentage{
+  color: #104099;
+  font-size: 40px;
+  font-weight: 400;
+  position: relative;
+  top: 5px;
+}
+
+.servicename{
+  position: relative;
+  top: 20px;
+  color: rgba(0, 0, 0, 0.628);
+  font-weight: 400;
+  font-size: larger;
+}
+
+.line-two{
+  position: absolute;
+  margin-top: 35rem;
+  left: 9.8rem;
+  width: calc(100% - 19.6rem);
+  border-top: 1px solid rgba(100, 100, 100, 0.5);
+  opacity: 0.5;
+}
+
+.service-info-container {
+  display: flex;
+  width: 100%;
+  padding: 0 155px;
+  position: relative;
+  top: 15rem;
+  align-items: center;
+}
+.service-info-content-left {
+  flex: 1;
+  font-size: 30px;
+  font-style: italic;
+  position: relative;
+  margin-right: 40px;
+  text-align: center;
+}
+.separator {
+  width: 100px;
+  height: 2px;
+  background-color: #00af89;
+  margin: 10px 0;
+  position: relative;
+  left: 130px;
+}
+.service-info-content-right {
+  flex: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.callnow-banner {
+  background: url('/public/img/blog.jpg') no-repeat center center/cover;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  color: #ffffff;
+  position: relative;
+  max-width: 1250px;
+  left: 6.8rem;
+  top: 40rem;
+}
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.callnow-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.callnow-text {
+  font-size: 24px;
+}
+.phone-number {
+  font-size: 36px;
+  font-weight: bold;
+}
+.callnow-button {
+  background-color: #00af89;
+  padding: 20px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  z-index: 1;
+}

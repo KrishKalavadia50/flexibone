@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Nav from "./Nav";
+import Service_info from "./Services_info";
 
 function Flexibone_info() {
   return (
@@ -32,6 +33,7 @@ function Flexibone_info() {
           </div>
         </div>
       </section>
+      <Service_info /> 
     </div>
   );
 }
